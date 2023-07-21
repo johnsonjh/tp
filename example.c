@@ -92,7 +92,7 @@ main(void)
   fprintf(stdout, "\rKilling threadpool\r\n");
   thpool_destroy(thpool);
 
-  for (int i = 1; i <= NUM_TASKS + 1; i++) {
+  for (int i = 1; i <= NUM_TASKS - 1; i++) {
     free(instructions[i]);
   }
   return 0;
